@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/home">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <View
+            android:id="@+id/homebar"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@drawable/home_conor"
+            android:backgroundTint="@color/main"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/pfp"
+            android:layout_width="155dp"
+            android:layout_height="155dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pfp"
+            app:shapeAppearanceOverlay="@style/circle"
+            android:layout_below="@id/homebar"
+            android:layout_marginTop="-130dp"
+            android:layout_marginStart="30dp" />
+
+        <TextView
+            android:id="@+id/course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Course"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/homebar"
+            android:layout_marginTop="20dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/course"
+            android:layout_marginTop="10dp"
+            >
+            <View
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:background="@drawable/curve"
+                android:alpha="0.5"
+                android:layout_marginStart="20dp"
+                />
+            <View
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:background="@drawable/curve"
+                android:alpha="0.5"
+                android:layout_marginLeft="15dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear1"
+            android:layout_marginTop="20dp"
+            >
+            <View
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:background="@drawable/curve"
+                android:alpha="0.5"
+                android:layout_marginStart="20dp"
+                />
+            <View
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:background="@drawable/curve"
+                android:alpha="0.5"
+                android:layout_marginLeft="15dp"
+                />
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/classtoday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Class Today"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@id/linear2"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            />
+        
+        <View
+            android:id="@+id/classupdate"
+            android:layout_width="370dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/classtoday"
+            android:layout_centerInParent="true"
+            android:background="@drawable/curve"
+            android:alpha="0.5"
+            android:layout_marginTop="15dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/classupdate"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            >
+            <View
+                android:layout_width="370dp"
+                android:layout_height="250dp"
+                android:background="@drawable/curve"
+                android:alpha="0.6"
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
